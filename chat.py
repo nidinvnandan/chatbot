@@ -13,7 +13,7 @@ from sklearn.metrics import precision_score
 try:
     nlp = spacy.load('en_core_web_sm')
 except OSError:
-    st.write("Downloading spaCy model 'en_core_web_sm'...")
+    
     spacy.cli.download('en_core_web_sm')
     nlp = spacy.load('en_core_web_sm')
 
