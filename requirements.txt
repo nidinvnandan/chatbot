@@ -1,6 +1,5 @@
 tensorflow
 numpy
-random
 spacy
 json
 pickle
