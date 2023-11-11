@@ -1,6 +1,5 @@
 tensorflow
 numpy
 spacy
-json
 pickle
 scikit-learn
