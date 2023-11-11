@@ -1,0 +1,7 @@
+tensorflow
+numpy
+random
+spacy
+json
+pickle
+scikit-learn
