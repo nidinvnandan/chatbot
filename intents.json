@@ -1,231 +1,245 @@
 {"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
-        },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
-        },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
-        },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
-        },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
-        },
-        {"tag": "rental",
-         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-         "responses": ["Are you looking to rent today or later this week?"],
-         "context_set": "rentalday"
-        },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
-        },
-        {
-        "tag": "help",
-        "patterns": ["Help", "I need assistance", "Can you help me?"],
-        "responses": ["Of course! What do you need help with?", "Sure, how can I assist you?", "I'm here to help!"]
-        },
-        {
-                "tag": "search",
-                "patterns": ["Search for", "Find information about", "Look up"],
-                "responses": ["Sure, let me find that information for you.", "I'll search for that. One moment.", "Searching now..."]
-        },
-        {
-                "tag": "weather",
-                "patterns": ["What's the weather like?", "Tell me the weather forecast", "Is it going to rain?"],
-                "responses": ["Let me check the weather for you.", "Sure, I'll get you the latest weather information.", "Checking the forecast..."]
-        },
-        {
-                "tag": "news",
-                "patterns": ["Tell me the news", "What's happening in the world?", "News update"],
-                "responses": ["Sure, let me fetch the latest news for you.", "I'll get you the most recent news.", "Checking the news now..."]
-        },
-        {
-                "tag": "joke",
-                "patterns": ["Tell me a joke", "Make me laugh", "Joke time"],
-                "responses": ["Why did the computer go to therapy? It had too many bytes of emotional baggage!", "Sure, here's a joke for you: Why don't scientists trust atoms? Because they make up everything!"]
-        },
-        {
-                "tag": "help",
-                "patterns": ["Help", "I need assistance", "Can you help me?"],
-                "responses": ["Of course! What do you need help with?", "Sure, how can I assist you?", "I'm here to help!"]
-        },
-        {
-                "tag": "search",
-                "patterns": ["Search for", "Find information about", "Look up"],
-                "responses": ["Sure, let me find that information for you.", "I'll search for that. One moment.", "Searching now..."]
-        },
-        {
-                "tag": "weather",
-                "patterns": ["What's the weather like?", "Tell me the weather forecast", "Is it going to rain?"],
-                "responses": ["Let me check the weather for you.", "Sure, I'll get you the latest weather information.", "Checking the forecast..."]
-        },
-        {
-                "tag": "news",
-                "patterns": ["Tell me the news", "What's happening in the world?", "News update"],
-                "responses": ["Sure, let me fetch the latest news for you.", "I'll get you the most recent news.", "Checking the news now..."]
-        },
-        {
-                "tag": "joke",
-                "patterns": ["Tell me a joke", "Make me laugh", "Joke time"],
-                "responses": ["Why did the computer go to therapy? It had too many bytes of emotional baggage!", "Sure, here's a joke for you: Why don't scientists trust atoms? Because they make up everything!"]
-        },
-        {
-                "tag": "deep_learning_frameworks",
-                "patterns": [
-                  "Which deep learning frameworks are popular",
-                  "Tell me about TensorFlow",
-                  "What is PyTorch used for?",
-                  "Compare Keras and TensorFlow",
-                  "How does scikit-learn relate to deep learning"
-                ],
-                "responses": [
-                  "Popular deep learning frameworks include TensorFlow, PyTorch, and Keras.",
-                  "TensorFlow is an open-source machine learning framework developed by Google.",
-                  "PyTorch is a deep learning framework known for its dynamic computation graph and ease of use.",
-                  "Keras is a high-level neural networks API written in Python, often used with TensorFlow.",
-                  "Scikit-learn is primarily a machine learning library, while TensorFlow and PyTorch are focused on deep learning."
-                ],
-                "context_set": ""
-              },
-              {"tag": "deep_learning",
-                "patterns": [
-                  "What is deep learning"
-                ],
-                "responses": [
-                  "Deep learning is a subfield of machine learning that focuses on neural networks with multiple layers, also known as deep neural networks. The term deep in deep learning refers to the depth of the neural network, which is characterized by the presence of many interconnected layers. These neural networks are designed to automatically learn and represent data in a hierarchical manner."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "training_neural_networks",
-                "patterns": [
-                  "How do you train a neural network",
-                  "Explain the training process in deep learning",
-                  "What is the role of epochs in model training",
-                  "How to prevent overfitting during training?",
-                  "Tell me about transfer learning"
-                ],
-                "responses": [
-                  "Training a neural network involves feeding data through the network and adjusting weights using backpropagation.",
-                  "The training process in deep learning aims to minimize the difference between predicted and actual outputs.",
-                  "Epochs in model training represent the number of times the entire training dataset is processed by the model.",
-                  "Overfitting can be prevented by using techniques like dropout, regularization, and early stopping.",
-                  "Transfer learning involves using pre-trained models on new tasks, saving training time and resources."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "what_is_deep_learning",
-                "patterns": [
-                  
-                  "Explain deep learning",
-                  "Define deep neural networks",
-                  "How does deep learning work",
-                  "Tell me about the basics of deep learning"
-                ],
-                "responses": [
-                  "Deep learning is a subfield of machine learning that focuses on neural networks with multiple layers, known as deep neural networks.",
-                  "In deep neural networks, information is processed through layers, allowing the model to learn hierarchical representations of the input data.",
-                  "The essence of deep learning is to automatically learn and represent features from data for tasks such as classification, regression, and clustering.",
-                  "Deep learning leverages neural networks with multiple hidden layers to extract intricate patterns from data, enabling complex decision-making.",
-                  "At its core, deep learning aims to mimic the human brain's ability to learn and make decisions by processing information through interconnected layers of artificial neurons."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "what_is_machine_learning",
-                "patterns": [
-                  "What is machine learning",
-                  "Explain machine learning",
-                  "Define supervised learning",
-                  "How does unsupervised learning work",
-                  "Tell me about the basics of machine learning"
-                ],
-                "responses": [
-                  "Machine learning is a field of artificial intelligence that focuses on creating systems that can learn from and make decisions based on data.",
-                  "In supervised learning, the model is trained on a labeled dataset, where the input data is paired with corresponding output labels.",
-                  "Unsupervised learning involves training models on unlabeled data, allowing them to find patterns and structures in the data without explicit guidance.",
-                  "The essence of machine learning is to enable systems to automatically improve their performance on a specific task through experience and without being explicitly programmed.",
-                  "Machine learning techniques include regression, classification, clustering, and dimensionality reduction, among others."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "supervised_learning",
-                "patterns": [
-                  "What is supervised learning",
-                  "Explain supervised machine learning",
-                  "Give an example of supervised learning",
-                  "How does regression work in supervised learning"
-                ],
-                "responses": [
-                  "Supervised learning is a machine learning paradigm where the model is trained on a labeled dataset, learning the mapping between input features and corresponding output labels.",
-                  "In supervised machine learning, the algorithm makes predictions based on input features and is corrected when its predictions are compared to the actual labels.",
-                  "An example of supervised learning is predicting house prices based on features like square footage, number of bedrooms, and location.",
-                  "Regression in supervised learning involves predicting a continuous output, such as predicting the price of a house."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "unsupervised_learning",
-                "patterns": [
-                  "What is unsupervised learning",
-                  "Explain unsupervised machine learning",
-                  "Give an example of unsupervised learning",
-                  "How does clustering work in unsupervised learning"
-                ],
-                "responses": [
-                  "Unsupervised learning is a machine learning paradigm where the model is trained on an unlabeled dataset, discovering patterns and structures in the data without explicit guidance.",
-                  "In unsupervised machine learning, the algorithm explores the data's inherent structure without the use of labeled output information.",
-                  "An example of unsupervised learning is clustering similar documents based on their content without predefined categories.",
-                  "Clustering in unsupervised learning involves grouping similar data points together based on certain features."
-                ],
-                "context_set": ""
-              },
-              {
-                "tag": "reinforcement_learning",
-                "patterns": [
-                  "What is reinforcement learning",
-                  "Explain reinforcement machine learning",
-                  "Give an example of reinforcement learning",
-                  "How does the reward system work in reinforcement learning"
-                ],
-                "responses": [
-                  "Reinforcement learning is a machine learning paradigm where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties.",
-                  "In reinforcement machine learning, the agent learns a policy to maximize cumulative reward through trial and error.",
-                  "An example of reinforcement learning is training a computer program to play and win games by learning from repeated interactions.",
-                  "The reward system in reinforcement learning provides positive or negative feedback to the agent, guiding it towards optimal decision-making."
-                ],
-                "context_set": ""
-              }
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+     "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {"tag": "hours",
+     "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+     "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "mopeds",
+     "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
+     "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+    },
+    {"tag": "payments",
+     "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+     "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+    },
+    {"tag": "opentoday",
+     "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+     "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "rental",
+     "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+     "responses": ["Are you looking to rent today or later this week?"],
+     "context_set": "rentalday"
+    },
+    {"tag": "today",
+     "patterns": ["today"],
+     "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
+     "context_filter": "rentalday"
+    },
+    {
+    "tag": "help",
+    "patterns": ["Help", "I need assistance", "Can you help me?"],
+    "responses": ["Of course! What do you need help with?", "Sure, how can I assist you?", "I'm here to help!"]
+    },
+    {
+            "tag": "search",
+            "patterns": ["Search for", "Find information about", "Look up"],
+            "responses": ["Sure, let me find that information for you.", "I'll search for that. One moment.", "Searching now..."]
+    },
+    {
+            "tag": "weather",
+            "patterns": ["What's the weather like?", "Tell me the weather forecast", "Is it going to rain?"],
+            "responses": ["Let me check the weather for you.", "Sure, I'll get you the latest weather information.", "Checking the forecast..."]
+    },
+    {
+            "tag": "news",
+            "patterns": ["Tell me the news", "What's happening in the world?", "News update"],
+            "responses": ["Sure, let me fetch the latest news for you.", "I'll get you the most recent news.", "Checking the news now..."]
+    },
+    {
+            "tag": "joke",
+            "patterns": ["Tell me a joke", "Make me laugh", "Joke time"],
+            "responses": ["Why did the computer go to therapy? It had too many bytes of emotional baggage!", "Sure, here's a joke for you: Why don't scientists trust atoms? Because they make up everything!"]
+    },
+    {
+            "tag": "help",
+            "patterns": ["Help", "I need assistance", "Can you help me?"],
+            "responses": ["Of course! What do you need help with?", "Sure, how can I assist you?", "I'm here to help!"]
+    },
+    {
+            "tag": "search",
+            "patterns": ["Search for", "Find information about", "Look up"],
+            "responses": ["Sure, let me find that information for you.", "I'll search for that. One moment.", "Searching now..."]
+    },
+    {
+            "tag": "weather",
+            "patterns": ["What's the weather like?", "Tell me the weather forecast", "Is it going to rain?"],
+            "responses": ["Let me check the weather for you.", "Sure, I'll get you the latest weather information.", "Checking the forecast..."]
+    },
+    {
+            "tag": "news",
+            "patterns": ["Tell me the news", "What's happening in the world?", "News update"],
+            "responses": ["Sure, let me fetch the latest news for you.", "I'll get you the most recent news.", "Checking the news now..."]
+    },
+    {
+            "tag": "joke",
+            "patterns": ["Tell me a joke", "Make me laugh", "Joke time"],
+            "responses": ["Why did the computer go to therapy? It had too many bytes of emotional baggage!", "Sure, here's a joke for you: Why don't scientists trust atoms? Because they make up everything!"]
+    },
+    {"tag": "machine learning",
+    "patterns": ["what is machine learning", "machine learning", "explain machine learning"],
+    "responses": ["Machine learning refers to a field of artificial intelligence (AI) that focuses on the development of algorithms and models that enable computers to learn from data and make predictions or decisions without being explicitly programmed. The core idea is to allow machines to improve their performance on a task over time by learning from experience."]},
+    {
+        "tag": "supervised",
+        "patterns": ["supervised machine learning","what is supervised machine learning"],
+        "responses": ["In supervised learning, the algorithm is trained on a labeled dataset, where each input is associated with a corresponding output.The goal is to learn a mapping from inputs to outputs so that the model can make accurate predictions on new, unseen data."]
+},
+{
+    "tag": "unsupervised",
+    "patterns": ["unsupervised machine learning","what is unsupervised machine learning"],
+    "responses": ["Unsupervised learning involves training models on unlabeled data, and the system tries to learn the patterns and structure inherent in the data.Common tasks include clustering (grouping similar data points) and dimensionality reduction (reducing the number of features)."]
+},
 
-              
-              
-              
+{
+    "tag": "semi-supervised",
+    "patterns": ["semi-supervised machine learning","what is semi-supervised machine learning"],
+    "responses": ["Semi-supervised learning combines elements of both supervised and unsupervised learning.The model is trained on a dataset that contains both labeled and unlabeled data, with the hope that the unlabeled data will help improve the model's performance."]
+},
+{
+    "tag": "Deep learning",
+    "patterns": ["what is deep learning","explain deep learning"],
+    "responses": ["Deep learning is a subset of machine learning that focuses on neural networks with multiple layers (deep neural networks).Deep learning has been particularly successful in tasks such as image and speech recognition, natural language processing, and playing strategic games."]
+},
+{
+    "tag": "Deep learning models",
+    "patterns": ["deep learning models","give some  deep learning models"],
+    "responses": ["CNN,RNN,LSTM,BLSTM are some deep learning models"]
+},
+{
+    "tag": "Deep learning architectures",
+    "patterns": ["What are some deep learning architectures?", "List common deep learning architectures"],
+    "responses": ["Some common deep learning architectures include CNN, RNN, LSTM, BLSTM, Transformer, GAN, and Autoencoder."]
+},
+{
+    "tag": "Convolutional Neural Networks (CNN)",
+    "patterns": ["Tell me about CNN", "Explain Convolutional Neural Networks"],
+    "responses": ["CNNs are a type of deep learning model designed for image processing. They use convolutional layers to automatically and adaptively learn spatial hierarchies of features."]
+},
+{
+    "tag": "Recurrent Neural Networks (RNN)",
+    "patterns": ["What is RNN?", "Explain Recurrent Neural Networks"],
+    "responses": ["RNNs are designed to work with sequence data. They have connections that form a cycle, allowing them to maintain a hidden state to capture information about previous inputs in the sequence."]
+},
+{
+    "tag": "Long Short-Term Memory (LSTM)",
+    "patterns": ["Tell me about LSTM", "Explain Long Short-Term Memory networks"],
+    "responses": ["LSTM is a type of RNN designed to address the vanishing gradient problem. It uses memory cells and gates to selectively remember or forget information over long sequences."]
+},
+{
+    "tag": "Bidirectional LSTM (BLSTM)",
+    "patterns": ["What is BLSTM?", "Explain Bidirectional LSTM"],
+    "responses": ["BLSTM is an extension of LSTM that processes the input sequence in both forward and backward directions. It captures information from both past and future context."]
+},
+{
+    "tag": "Generative Adversarial Networks (GAN)",
+    "patterns": ["Tell me about GAN", "Explain Generative Adversarial Networks"],
+    "responses": ["GANs consist of a generator and a discriminator network. The generator creates new data, and the discriminator evaluates how close the generated data is to real data. They are used for generative tasks."]
+},
+{
+    "tag": "Autoencoder",
+    "patterns": ["What is an Autoencoder?", "Explain Autoencoder in deep learning"],
+    "responses": ["Autoencoders are neural networks designed for unsupervised learning. They consist of an encoder that compresses input data into a lower-dimensional representation and a decoder that reconstructs the original data from this representation."]
+},
+{
+    "tag": "Decision Trees",
+    "patterns": ["Tell me about decision trees", "Explain decision tree algorithm"],
+    "responses": ["Decision trees are a type of supervised learning algorithm used for classification and regression tasks. They make decisions by recursively splitting the dataset based on features, forming a tree-like structure."]
+},
+{
+    "tag": "Ensemble Learning",
+    "patterns": ["What is ensemble learning?", "Explain ensemble learning in machine learning"],
+    "responses": ["Ensemble learning combines the predictions of multiple machine learning models to improve overall performance. Common ensemble methods include bagging (e.g., Random Forest) and boosting (e.g., AdaBoost)."]
+},
+{
+    "tag": "Natural Language Processing (NLP)",
+    "patterns": ["Tell me about NLP in machine learning", "Explain Natural Language Processing"],
+    "responses": ["Natural Language Processing (NLP) is a branch of machine learning that focuses on the interaction between computers and human language. It involves tasks like text analysis, sentiment analysis, and language translation."]
+},
+{
+    "tag": "Introduction to NLP",
+    "patterns": ["What is Natural Language Processing?", "Give me an overview of NLP"],
+    "responses": ["Natural Language Processing (NLP) is a branch of artificial intelligence that enables machines to understand, interpret, and generate human-like language. It involves the interaction between computers and natural language, enabling tasks such as text analysis, sentiment analysis, and language translation."]
+},
+{
+    "tag": "Tokenization",
+    "patterns": ["What is tokenization in NLP?", "Explain tokenization"],
+    "responses": ["Tokenization is the process of breaking down a text into smaller units, known as tokens. These tokens can be words, phrases, or other meaningful elements, and they serve as the building blocks for various NLP tasks."]
+},
+{
+    "tag": "Named Entity Recognition (NER)",
+    "patterns": ["Tell me about Named Entity Recognition", "What is NER in NLP?"],
+    "responses": ["Named Entity Recognition (NER) is an NLP task that involves identifying and classifying entities (such as names of people, organizations, locations, etc.) in a text. It helps extract structured information from unstructured text data."]
+},
+{
+    "tag": "Sentiment Analysis",
+    "patterns": ["Explain sentiment analysis", "What is sentiment analysis in NLP?"],
+    "responses": ["Sentiment analysis, also known as opinion mining, is the process of determining the sentiment expressed in a piece of text. It is commonly used to understand whether the expressed opinion is positive, negative, or neutral."]
+},
+{
+    "tag": "Language Translation",
+    "patterns": ["Tell me about language translation in NLP", "Explain machine translation"],
+    "responses": ["Language translation in NLP involves developing models that can automatically translate text from one language to another. It is a challenging task that has seen significant advancements with the use of deep learning models like transformers."]
+},
+{
+    "tag": "Part-of-Speech Tagging (POS)",
+    "patterns": ["What is Part-of-Speech Tagging?", "Explain POS tagging in NLP"],
+    "responses": ["Part-of-Speech (POS) tagging is the process of assigning grammatical categories (such as nouns, verbs, adjectives) to words in a text. It helps in understanding the syntactic structure of a sentence."]
+},
+{
+    "tag": "Text Summarization",
+    "patterns": ["Tell me about text summarization", "What is text summarization in NLP?"],
+    "responses": ["Text summarization in NLP involves generating a concise and coherent summary of a longer text while retaining its essential information. It can be extractive, where sentences are selected, or abstractive, where new sentences are generated."]
+},
+{
+    "tag": "Introduction to Computer Vision",
+    "patterns": ["What is Computer Vision?", "Give me an overview of Computer Vision"],
+    "responses": ["Computer Vision is a field of artificial intelligence that enables machines to interpret and understand visual information from the world. It involves tasks such as image recognition, object detection, and image segmentation."]
+},
+{
+    "tag": "Image Recognition",
+    "patterns": ["Explain image recognition", "What is image recognition in computer vision?"],
+    "responses": ["Image recognition, also known as image classification, is the process of categorizing and labeling objects or scenes within an image. It is a fundamental task in computer vision and is often achieved using deep learning models."]
+},
+{
+    "tag": "Object Detection",
+    "patterns": ["Tell me about object detection", "Explain object detection in computer vision"],
+    "responses": ["Object detection in computer vision involves identifying and locating objects within an image or video. It provides both the class label and the bounding box coordinates for each detected object, enabling more detailed analysis."]
+},
+{
+    "tag": "Facial Recognition",
+    "patterns": ["What is facial recognition?", "Explain facial recognition in computer vision"],
+    "responses": ["Facial recognition is a computer vision task that involves identifying and verifying individuals based on their facial features. It is commonly used for security applications, authentication, and in some cases, for emotion analysis."]
+},
+{
+    "tag": "Image Segmentation",
+    "patterns": ["Tell me about image segmentation", "What is image segmentation in computer vision?"],
+    "responses": ["Image segmentation is the process of dividing an image into meaningful segments or regions. Each segment represents a distinct object or part of the scene. It is crucial for tasks like medical image analysis and autonomous vehicle navigation."]
+},
+{
+    "tag": "Convolutional Neural Networks (CNN) in Computer Vision",
+    "patterns": ["Explain the role of CNN in computer vision", "How are CNNs used in image processing?"],
+    "responses": ["Convolutional Neural Networks (CNNs) are widely used in computer vision for their ability to automatically learn hierarchical features from images. They are particularly effective for tasks like image classification, object detection, and image segmentation."]
+},
+{
+    "tag": "Deep Learning for Computer Vision",
+    "patterns": ["Tell me about deep learning in computer vision", "How does deep learning impact image analysis?"],
+    "responses": ["Deep learning has significantly advanced computer vision by enabling the training of complex neural network architectures, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), for tasks like image recognition, object detection, and more."]
+}
 
-              
-              
-              
-              
 
-   ]
+
+    ]
+
 }
