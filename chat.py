@@ -82,7 +82,7 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 early_stopping = EarlyStopping(monitor='accuracy', patience=10, restore_best_weights=True)
 
 print("Training....")
-model.fit(np.array(train_x), np.array(train_y), epochs=1000, batch_size=8, verbose=1, callbacks=[early_stopping])
+model.fit(np.array(train_x), np.array(train_y), epochs=60, batch_size=8, verbose=1, callbacks=[early_stopping])
 
 print("Saving the Model.......")
 model.save('model_keras.h5')
