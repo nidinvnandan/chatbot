@@ -119,52 +119,52 @@
 },
 {
     "tag": "Deep learning architectures",
-    "patterns": ["What are some deep learning architectures?", "List common deep learning architectures"],
+    "patterns": ["Deep learning architectures","What are some deep learning architectures?", "List common deep learning architectures"],
     "responses": ["Some common deep learning architectures include CNN, RNN, LSTM, BLSTM, Transformer, GAN, and Autoencoder."]
 },
 {
     "tag": "Convolutional Neural Networks (CNN)",
-    "patterns": ["Tell me about CNN", "Explain Convolutional Neural Networks"],
+    "patterns": ["Convolutional Neural Networks","Tell me about CNN", "Explain Convolutional Neural Networks"],
     "responses": ["CNNs are a type of deep learning model designed for image processing. They use convolutional layers to automatically and adaptively learn spatial hierarchies of features."]
 },
 {
     "tag": "Recurrent Neural Networks (RNN)",
-    "patterns": ["What is RNN?", "Explain Recurrent Neural Networks"],
+    "patterns": ["Recurrent Neural Networks","What is RNN?", "Explain Recurrent Neural Networks"],
     "responses": ["RNNs are designed to work with sequence data. They have connections that form a cycle, allowing them to maintain a hidden state to capture information about previous inputs in the sequence."]
 },
 {
     "tag": "Long Short-Term Memory (LSTM)",
-    "patterns": ["Tell me about LSTM", "Explain Long Short-Term Memory networks"],
+    "patterns": ["Long Short-Term Memory","Tell me about LSTM", "Explain Long Short-Term Memory networks"],
     "responses": ["LSTM is a type of RNN designed to address the vanishing gradient problem. It uses memory cells and gates to selectively remember or forget information over long sequences."]
 },
 {
     "tag": "Bidirectional LSTM (BLSTM)",
-    "patterns": ["What is BLSTM?", "Explain Bidirectional LSTM"],
+    "patterns": ["Bidirectional LSTM","What is BLSTM?", "Explain Bidirectional LSTM"],
     "responses": ["BLSTM is an extension of LSTM that processes the input sequence in both forward and backward directions. It captures information from both past and future context."]
 },
 {
     "tag": "Generative Adversarial Networks (GAN)",
-    "patterns": ["Tell me about GAN", "Explain Generative Adversarial Networks"],
+    "patterns": ["Generative Adversarial Networks","Tell me about GAN", "Explain Generative Adversarial Networks"],
     "responses": ["GANs consist of a generator and a discriminator network. The generator creates new data, and the discriminator evaluates how close the generated data is to real data. They are used for generative tasks."]
 },
 {
     "tag": "Autoencoder",
-    "patterns": ["What is an Autoencoder?", "Explain Autoencoder in deep learning"],
+    "patterns": ["Autoencoder","What is an Autoencoder?", "Explain Autoencoder in deep learning"],
     "responses": ["Autoencoders are neural networks designed for unsupervised learning. They consist of an encoder that compresses input data into a lower-dimensional representation and a decoder that reconstructs the original data from this representation."]
 },
 {
     "tag": "Decision Trees",
-    "patterns": ["Tell me about decision trees", "Explain decision tree algorithm"],
+    "patterns": ["Decision Trees","Tell me about decision trees", "Explain decision tree algorithm"],
     "responses": ["Decision trees are a type of supervised learning algorithm used for classification and regression tasks. They make decisions by recursively splitting the dataset based on features, forming a tree-like structure."]
 },
 {
     "tag": "Ensemble Learning",
-    "patterns": ["What is ensemble learning?", "Explain ensemble learning in machine learning"],
+    "patterns": ["Ensemble Learning","What is ensemble learning?", "Explain ensemble learning in machine learning"],
     "responses": ["Ensemble learning combines the predictions of multiple machine learning models to improve overall performance. Common ensemble methods include bagging (e.g., Random Forest) and boosting (e.g., AdaBoost)."]
 },
 {
     "tag": "Natural Language Processing (NLP)",
-    "patterns": ["Tell me about NLP in machine learning", "Explain Natural Language Processing"],
+    "patterns": ["Natural Language Processing","NLP","Tell me about NLP in machine learning", "Explain Natural Language Processing"],
     "responses": ["Natural Language Processing (NLP) is a branch of machine learning that focuses on the interaction between computers and human language. It involves tasks like text analysis, sentiment analysis, and language translation."]
 },
 {
@@ -174,17 +174,17 @@
 },
 {
     "tag": "Tokenization",
-    "patterns": ["What is tokenization in NLP?", "Explain tokenization"],
+    "patterns": ["Tokenization","What is tokenization in NLP?", "Explain tokenization"],
     "responses": ["Tokenization is the process of breaking down a text into smaller units, known as tokens. These tokens can be words, phrases, or other meaningful elements, and they serve as the building blocks for various NLP tasks."]
 },
 {
     "tag": "Named Entity Recognition (NER)",
-    "patterns": ["Tell me about Named Entity Recognition", "What is NER in NLP?"],
+    "patterns": ["Named Entity Recognition","Tell me about Named Entity Recognition", "What is NER in NLP?"],
     "responses": ["Named Entity Recognition (NER) is an NLP task that involves identifying and classifying entities (such as names of people, organizations, locations, etc.) in a text. It helps extract structured information from unstructured text data."]
 },
 {
     "tag": "Sentiment Analysis",
-    "patterns": ["Explain sentiment analysis", "What is sentiment analysis in NLP?"],
+    "patterns": ["Sentiment Analysis","Explain sentiment analysis", "What is sentiment analysis in NLP?"],
     "responses": ["Sentiment analysis, also known as opinion mining, is the process of determining the sentiment expressed in a piece of text. It is commonly used to understand whether the expressed opinion is positive, negative, or neutral."]
 },
 {
@@ -194,37 +194,37 @@
 },
 {
     "tag": "Part-of-Speech Tagging (POS)",
-    "patterns": ["What is Part-of-Speech Tagging?", "Explain POS tagging in NLP"],
+    "patterns": ["Part-of-Speech Tagging","What is Part-of-Speech Tagging?", "Explain POS tagging in NLP"],
     "responses": ["Part-of-Speech (POS) tagging is the process of assigning grammatical categories (such as nouns, verbs, adjectives) to words in a text. It helps in understanding the syntactic structure of a sentence."]
 },
 {
     "tag": "Text Summarization",
-    "patterns": ["Tell me about text summarization", "What is text summarization in NLP?"],
+    "patterns": ["Text Summarization","Tell me about text summarization", "What is text summarization in NLP?"],
     "responses": ["Text summarization in NLP involves generating a concise and coherent summary of a longer text while retaining its essential information. It can be extractive, where sentences are selected, or abstractive, where new sentences are generated."]
 },
 {
     "tag": "Introduction to Computer Vision",
-    "patterns": ["What is Computer Vision?", "Give me an overview of Computer Vision"],
+    "patterns": ["Computer Vision","What is Computer Vision?", "Give me an overview of Computer Vision"],
     "responses": ["Computer Vision is a field of artificial intelligence that enables machines to interpret and understand visual information from the world. It involves tasks such as image recognition, object detection, and image segmentation."]
 },
 {
     "tag": "Image Recognition",
-    "patterns": ["Explain image recognition", "What is image recognition in computer vision?"],
+    "patterns": ["Image Recognition","Explain image recognition", "What is image recognition in computer vision?"],
     "responses": ["Image recognition, also known as image classification, is the process of categorizing and labeling objects or scenes within an image. It is a fundamental task in computer vision and is often achieved using deep learning models."]
 },
 {
     "tag": "Object Detection",
-    "patterns": ["Tell me about object detection", "Explain object detection in computer vision"],
+    "patterns": ["Object Detection","Tell me about object detection", "Explain object detection in computer vision"],
     "responses": ["Object detection in computer vision involves identifying and locating objects within an image or video. It provides both the class label and the bounding box coordinates for each detected object, enabling more detailed analysis."]
 },
 {
     "tag": "Facial Recognition",
-    "patterns": ["What is facial recognition?", "Explain facial recognition in computer vision"],
+    "patterns": ["Facial Recognition","What is facial recognition?", "Explain facial recognition in computer vision"],
     "responses": ["Facial recognition is a computer vision task that involves identifying and verifying individuals based on their facial features. It is commonly used for security applications, authentication, and in some cases, for emotion analysis."]
 },
 {
     "tag": "Image Segmentation",
-    "patterns": ["Tell me about image segmentation", "What is image segmentation in computer vision?"],
+    "patterns": ["Image Segmentation","Tell me about image segmentation", "What is image segmentation in computer vision?"],
     "responses": ["Image segmentation is the process of dividing an image into meaningful segments or regions. Each segment represents a distinct object or part of the scene. It is crucial for tasks like medical image analysis and autonomous vehicle navigation."]
 },
 {
