@@ -124,12 +124,12 @@
 },
 {
     "tag": "Convolutional Neural Networks (CNN)",
-    "patterns": ["Convolutional Neural Networks","Tell me about CNN", "Explain Convolutional Neural Networks"],
+    "patterns": ["Convolutional Neural Network","CNN","Convolutional Neural Networks","Tell me about CNN", "Explain Convolutional Neural Networks"],
     "responses": ["CNNs are a type of deep learning model designed for image processing. They use convolutional layers to automatically and adaptively learn spatial hierarchies of features."]
 },
 {
     "tag": "Recurrent Neural Networks (RNN)",
-    "patterns": ["Recurrent Neural Networks","What is RNN?", "Explain Recurrent Neural Networks"],
+    "patterns": ["Recurrent Neural Network","RNN","Recurrent Neural Networks","What is RNN?", "Explain Recurrent Neural Networks"],
     "responses": ["RNNs are designed to work with sequence data. They have connections that form a cycle, allowing them to maintain a hidden state to capture information about previous inputs in the sequence."]
 },
 {
