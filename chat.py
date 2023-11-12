@@ -10,12 +10,9 @@ import json
 import pickle
 from sklearn.metrics import precision_score
 
-try:
-    nlp = spacy.load('en_core_web_sm')
-except OSError:
-    
-    spacy.cli.download('en_core_web_sm')
-    nlp = spacy.load('en_core_web_sm')
+
+nlp = spacy.load('en_core_web_sm')
+
 
 print("Processing the Intents.....")
 with open('intents.json') as json_data:
