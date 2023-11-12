@@ -10,9 +10,7 @@ import json
 import pickle
 from sklearn.metrics import precision_score
 
-
-nlp = spacy.load('en_core_web_sm')
-
+nlp = spacy.load("en_core_web_sm")
 
 print("Processing the Intents.....")
 with open('intents.json') as json_data:
@@ -110,29 +108,29 @@ ERROR_THRESHOLD = 0.25
 print("ERROR_THRESHOLD = 0.25")
 
 
-def clean_up_sentence(sentence):
+def clean_sentence(sentence):
     sentence_words = [token.text.lower() for token in nlp(sentence)]
     return sentence_words
 
 
-def bow(sentence, words):
-    sentence_words = clean_up_sentence(sentence)
+def bagofwords(sentence, words):
+    sentence_words = clean_sentence(sentence)
     bag = [1 if w in sentence_words else 0 for w in words]
     return np.array(bag)
 
 
-def classify(sentence):
-    results = model.predict(np.array([bow(sentence, words)]))[0]
+def classifier(sentence):
+    results = model.predict(np.array([bagofwords(sentence, words)]))[0]
     results = [[i, r] for i, r in enumerate(results) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = [(classes[r[0]], r[1]) for r in results]
     return return_list
 
 
-def response(sentence, userID='123', show_details=False):
+def generate_response(sentence, userID='123', show_details=False):
     if sentence.lower() in ['quit', 'bye']:
         return "Goodbye! Chatbot session terminated."
-    results = classify(sentence)
+    results = classifier(sentence)
     if results:
         for i in intents['intents']:
             if i['tag'] == results[0][0]:
