@@ -109,7 +109,7 @@
 },
 {
     "tag": "Deep learning",
-    "patterns": ["what is deep learning","explain deep learning"],
+    "patterns": ["deep learning","what is deep learning","explain deep learning"],
     "responses": ["Deep learning is a subset of machine learning that focuses on neural networks with multiple layers (deep neural networks).Deep learning has been particularly successful in tasks such as image and speech recognition, natural language processing, and playing strategic games."]
 },
 {
