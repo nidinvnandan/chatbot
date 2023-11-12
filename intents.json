@@ -134,17 +134,17 @@
 },
 {
     "tag": "Long Short-Term Memory (LSTM)",
-    "patterns": ["Long Short-Term Memory","Tell me about LSTM", "Explain Long Short-Term Memory networks"],
+    "patterns": ["LSTM","Long Short-Term Memory","Tell me about LSTM", "Explain Long Short-Term Memory networks"],
     "responses": ["LSTM is a type of RNN designed to address the vanishing gradient problem. It uses memory cells and gates to selectively remember or forget information over long sequences."]
 },
 {
     "tag": "Bidirectional LSTM (BLSTM)",
-    "patterns": ["Bidirectional LSTM","What is BLSTM?", "Explain Bidirectional LSTM"],
+    "patterns": ["BLSTM","Bidirectional LSTM","What is BLSTM?", "Explain Bidirectional LSTM"],
     "responses": ["BLSTM is an extension of LSTM that processes the input sequence in both forward and backward directions. It captures information from both past and future context."]
 },
 {
     "tag": "Generative Adversarial Networks (GAN)",
-    "patterns": ["Generative Adversarial Networks","Tell me about GAN", "Explain Generative Adversarial Networks"],
+    "patterns": ["GAN","Generative Adversarial Networks","Tell me about GAN", "Explain Generative Adversarial Networks"],
     "responses": ["GANs consist of a generator and a discriminator network. The generator creates new data, and the discriminator evaluates how close the generated data is to real data. They are used for generative tasks."]
 },
 {
